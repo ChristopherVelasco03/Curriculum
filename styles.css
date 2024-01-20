@@ -1,0 +1,425 @@
+@import url('https://fonts.cdnfonts.com/css/thegoodmonolith');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f011f;
+}
+
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+.contenedor-header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header nav ul li a:hover{
+    color:  #1CB698;
+}
+
+.contenedor-header img{
+    float: right;
+    width:48px;
+    height:48px;
+    transition: .5s;
+}
+
+/*.contenedor-principal {
+
+}*/
+
+.estudio {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; 
+    font-family: 'TheGoodMonolith', sans-serif;
+    color: #1CB698;
+}
+
+.estudio h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.foto-perfil img {
+    border-radius: 50%;
+    width:  250px;
+    height: 300px;
+    border: 5px solid #1CB698;
+    padding: 2px;
+}
+
+.foto-perfil {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 1;
+}
+
+.sobremi{
+    color: #fff;
+    margin-top: 410px; 
+}
+
+.fondo {
+    position: relative; 
+}
+
+.fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/Fondo.jpg'); 
+    filter: brightness(0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 35px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+    margin: 0;
+}
+
+.sobremi .fila .col
+{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 35px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.habilidades{
+    margin-top: 80px;
+    position:relative;
+    min-height: 100vh;
+    background-color: #0f011f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color:#fff;
+    margin-bottom: 80px;
+}
+
+.contenedor-skill{
+    position: relative;
+    width: 650px;
+    background: rgba(0,0,0,.2);
+    padding: 0 17px;
+}
+
+.contenedor-skill h2{
+    font-size: 35px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    color: #fff;
+}
+
+.contenedor-skill .skill{
+    margin: 20px 0;
+}
+
+.contenedor-skill .skill p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-skill .skill .progress{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #999;
+    border-radius: 6px;
+    overflow: hidden;
+    margin:5px 0;
+}
+
+.contenedor-skill .skill .progress::before{
+    content: '';
+    position: absolute;
+    width: var(--wth);
+    height: 100%;
+    background: #0280fe;
+}
+
+.referencias ul{
+    list-style-type: '🤝🏼';
+    margin-left: 450px ;
+}
+
+ul li::marker{
+    font-size: 20px;
+    text-align: center;
+}
+
+.referencias{
+    color: #fff;
+
+}
+
+.fondo-amigos {
+    position: relative; 
+}
+
+.fondo-amigos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('img/amistad.jpg'); 
+    filter: brightness(0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.referencias p{
+    font-size: 19px; 
+    font-family: 'Righteous';
+}
+
+.referencias h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.referencias ul li {
+    font-size: 30px; 
+    font-family: 'Righteous';
+}
+
+.proyectos h2{
+    margin-top: 100px;
+    font-size: 35px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin: 40px;
+    color: #fff;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff
+}
+
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+    margin: 20px;
+}
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #1CB698;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    color: black;
+    font-size: 2em;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #1e2326;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #1CB698;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type:disc;
+}
+
+.footerNav ul li a{
+    color: #1CB698;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: #fff;
+}
+
+.footerContainer h2{
+    font-size: 35px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    color: #fff;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:400;
+    margin: 0px 5px;
+}
+
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
